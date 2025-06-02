@@ -16,8 +16,9 @@ export default function App() {
         <h1 className="text-3xl sm:text-4xl font-semibold">Todo App</h1>
         <div className="mt-6">
           <input className="p-2 rounded-md border" type="text" placeholder="Enter a task"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
+            value={input} // The value part in input element is whatever we type in input field
+            onChange={(e) => setInput(e.target.value)}// this function is executed whenever we type something in input field
+                                                     //and input will be updated using the e.target.value
           />
           <button onClick={addTodo} className="p-2 rounded-md bg-blue-500 text-white">Add</button>
         </div>
